@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -11,7 +16,8 @@ body {
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
-    background-color: #f5f8ff;
+    /* background-color: #f5f8ff; */
+    background-color: #08e92a;
 }
 
 
@@ -90,6 +96,7 @@ body {
 /* OUR PAGE RELATED */
 .plants-section {
   max-width: 1100px;
+  margin: 0 auto;
   /* margin: 40px auto 0; */
 }
 
@@ -119,19 +126,19 @@ body {
 .plants-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap:15px;
-  align-items: start;
+  gap: 8px;
+ 
 }
 .plant-card {
   background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 0px;
+  width: 100%;
 }
 .plant-card img{
   width: 270px;
-  height: 322.94px;
+  height: 322px;
   object-fit: cover;
   margin-bottom: 12px;
 }
@@ -155,7 +162,7 @@ text-align: center;
   font-size: 1rem;
   font-weight: 400;
   padding: 15px 10px;
-  width: 250px;
+  width: 270px;
   margin-top: 5px;
   cursor: pointer;
 }
@@ -352,7 +359,7 @@ footer {
   }
 
 .banner-content {
-    padding-left: 30px;
+    padding-left: 20px;
     text-align: left;
     width: 100%;
   }
@@ -377,15 +384,18 @@ footer {
  }
   .plants-grid {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
   }
   .plant-card img{
     width: 450px;
     height: 260px;
     gap: 5px;
+    
   }
   .plant-btn{
-    width: 160px;
-    height: 20px;
+    margin-bottom: 10px;
+    width: 180px;
+    height: 50px;
     gap: 10px;
     
   }
@@ -400,13 +410,16 @@ footer {
     width: 100%;
     max-width: 180px;
   }
+  /* flower shop */
   .flower-shop {
     flex-direction: column;
     align-items: center;
     gap: 30px;
     margin-top: 40px;
+    padding: 0 20px;
   }
   .shop-image img {
+    /* padding: 30px 20px; */
     width: 100%;
     max-width: 450px;
     height: auto;
@@ -414,6 +427,7 @@ footer {
   }
   .shop-content {
     width: 100%;
+    /* padding: 0 20px; */
   }
   .shop-content h2 {
     font-size: 1.5rem;
@@ -454,47 +468,7 @@ footer {
     background-size: cover; /* optional override if contain looks too small */
   }
   /* FOOTER SECTION */
-   /* footer {
-    padding: 30px 20px;
-  }
-  
-  .footer-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .footer-logo {
-    margin-bottom: 0;
-    margin-top: 5px;
-  }
-  
-  .footer-logo p {
-    font-size: 1rem;
-    max-width: 100%;
-    line-height: 1.5;
-    margin-bottom: 0;
-  }
-  
-  .footer-links ul {
-    padding: 0;
-    margin-top:5px;
-
-  }
-  
-  .footer-links li {
-    margin-bottom: 25px;
-  }
-  
-  .footer-links:last-of-type {
-    margin-top: 10px;
-  }
-  
-  .footer-social {
-    padding-top: 10px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-
-  } 
-    */
+   
     footer {
     padding: 30px 20px;
   }
